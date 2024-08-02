@@ -1,0 +1,17 @@
+Sorting Algorithms: Quick Sort and Heap Sort
+
+Quick Sort:
+Divide-and-conquer algorithm that sorts an array by selecting a pivot element, partitioning the array into two sub-arrays, and recursively sorting the sub-arrays.
+Time complexity: O(n log n) on average, O(n^2) in the worst case.
+Can be improved using optimized partition schemes, such as the Lomuto partition scheme or dual-pivot quick sort.
+Heap Sort:
+Comparison-based sorting algorithm that uses a binary heap data structure to sort an array.
+Time complexity: O(n log n) in all cases.
+Can be used as a fallback sorting algorithm in hybrid sorting algorithms like Introsort.
+Optimized Partition Schemes
+
+Lomuto Partition Scheme: A variation of the standard Hoare partition scheme used in Quick Sort, which is slightly faster and more efficient.
+Dual-Pivot Quick Sort: A variation of Quick Sort that uses two pivots instead of one, which can improve performance when the input array has many duplicate elements.
+Hybrid Sorting Algorithms
+
+Introsort: A hybrid sorting algorithm that combines Quick Sort and Heap Sort, switching to Heap Sort when the recursion depth exceeds a certain threshold to avoid the O(n^2) worst-case scenario of Quick Sort.
