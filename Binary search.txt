@@ -1,0 +1,29 @@
+Binary Search
+
+Binary search is a fast search algorithm that finds the position of a target value within a sorted array. It compares the target value to the middle element of the array and eliminates half of the array in each iteration, reducing the search space.
+
+How Binary Search Works
+
+Preconditions: The array must be sorted in ascending or descending order.
+Initialization: Set two pointers, low and high, to the start and end of the array, respectively.
+Iteration:
+Calculate the midpoint mid of the array using low and high.
+Compare the target value to the element at mid.
+If the target value is less than the element at mid, set high to mid - 1.
+If the target value is greater than the element at mid, set low to mid + 1.
+Repeat steps 3-4 until low is greater than high.
+Result: If low is equal to high, the target value is found at index low. Otherwise, the target value is not in the array.
+Example Code using a Good Array ( NumPy Array )
+
+Here's an example code using a NumPy array, which is a good array type in Python:
+<refer binary.py>
+In this example, we create a sorted NumPy array arr and define a binary_search function that takes the array and a target value as input. The function returns the index of the target value if found, or -1 if not found.
+
+Why NumPy Array is a Good Array
+
+NumPy arrays are a good choice for binary search because they:
+
+Are contiguous in memory, which allows for efficient iteration and indexing.
+Support vectorized operations, which can be used to implement binary search more efficiently.
+Have a fixed size, which allows for efficient memory allocation and deallocation.
+Note that the binary_search function can be used with any sorted array, not just NumPy arrays. However, using a NumPy array can provide better performance and memory efficiency.
