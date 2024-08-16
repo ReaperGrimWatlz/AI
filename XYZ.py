@@ -1,218 +1,60 @@
-PS D:\Vs_Code> root.mainloop()
-At line:1 char:15
-+ root.mainloop()
-+               ~
-An expression was expected after '('.
-    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
-    + FullyQualifiedErrorId : ExpectedExpression
- 
-PS D:\Vs_Code> & C:/Users/bsprwslib04/AppData/Local/python.exe d:/Vs_Code/XYZ.py
-Exception in Tkinter callback
-Traceback (most recent call last):
-  File "C:\Users\bsprwslib04\AppData\Local\Lib\tkinter\__init__.py", line 1967, in __call__
-    return self.func(*args)
-           ^^^^^^^^^^^^^^^^
-  File "d:\Vs_Code\XYZ.py", line 5, in doingit
-    cubem.desroy()
-    ^^^^^^^^^^^^
-    return self.func(*args)
-           ^^^^^^^^^^^^^^^^
-  File "d:\Vs_Code\XYZ.py", line 5, in doingit
-    cubem.destroy()
-    ^^^^^^^^^^^^
-AttributeError: 'Button' object has no attribute 'desroy'
-PS D:\Vs_Code> & C:/Users/bsprwslib04/AppData/Local/python.exe d:/Vs_Code/XYZ.py
-PS D:\Vs_Code> & C:/Users/bsprwslib04/AppData/Local/python.exe d:/Vs_Code/XYZ.py
-PS D:\Vs_Code> & C:/Users/bsprwslib04/AppData/Local/python.exe d:/Vs_Code/XYZ.py
-PS D:\Vs_Code> & C:/Users/bsprwslib04/AppData/Local/python.exe d:/Vs_Code/XYZ.py
-Exception in Tkinter callback
-Traceback (most recent call last):
-  File "C:\Users\bsprwslib04\AppData\Local\Lib\tkinter\__init__.py", line 1967, in __call__
-    return self.func(*args)
-  File "d:\Vs_Code\XYZ.py", line 48, in doingit
-    newboy.pack("right")
-  File "C:\Users\bsprwslib04\AppData\Local\Lib\tkinter\__init__.py", line 2473, in pack_configure
-    + self._options(cnf, kw))
-      ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\bsprwslib04\AppData\Local\Lib\tkinter\__init__.py", line 1550, in _options
-    for k, v in cnf.items():
-                ^^^^^^^^^
-AttributeError: 'str' object has no attribute 'items'
-PS D:\Vs_Code> & C:/Users/bsprwslib04/AppData/Local/python.exe d:/Vs_Code/XYZ.py
-Exception in Tkinter callback
-Traceback (most recent call last):
-  File "C:\Users\bsprwslib04\AppData\Local\Lib\tkinter\__init__.py", line 1967, in __call__
-           ^^^^^^^^^^^^^^^^
-  File "d:\Vs_Code\XYZ.py", line 21, in opencalc
-    entry = mk.Entry(root, width=35, borderwidth=5)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\bsprwslib04\AppData\Local\Lib\tkinter\__init__.py", line 3123, in __init__
-    Widget.__init__(self, master, 'entry', cnf, kw)
-  File "C:\Users\bsprwslib04\AppData\Local\Lib\tkinter\__init__.py", line 2647, in __init__
-    self.tk.call(
-_tkinter.TclError: can't invoke "entry" command: application has been destroyed
-PS D:\Vs_Code> & C:/Users/bsprwslib04/AppData/Local/python.exe d:/Vs_Code/XYZ.py
-Exception in Tkinter callback
-Traceback (most recent call last):
-  File "C:\Users\bsprwslib04\AppData\Local\Lib\tkinter\__init__.py", line 1967, in __call__
-           ^^^^^^^^^^^^^^^^
-  File "d:\Vs_Code\XYZ.py", line 5, in opencalc
-    entry = mk.Entry(root, width=35, borderwidth=5)
-            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\bsprwslib04\AppData\Local\Lib\tkinter\__init__.py", line 3123, in __init__
-    Widget.__init__(self, master, 'entry', cnf, kw)
-  File "C:\Users\bsprwslib04\AppData\Local\Lib\tkinter\__init__.py", line 2647, in __init__
-    self.tk.call(
-_tkinter.TclError: can't invoke "entry" command: application has been destroyed
-Traceback (most recent call last):
-  File "C:\Users\bsprwslib04\AppData\Local\Lib\tkinter\__init__.py", line 1967, in __call__
-    return self.func(*args)
-           ^^^^^^^^^^^^^^^^
-  File "d:\Vs_Code\XYZ.py", line 4, in opencalc
+import tkinter as mk
+import cube
+import time
+start=time.time()
+def opencalc(root):
     root.destroy()
-    ^^^^
-UnboundLocalError: cannot access local variable 'root' where it is not associated with a value
-PS D:\Vs_Code> & C:/Users/bsprwslib04/AppData/Local/python.exe d:/Vs_Code/XYZ.py
-Exception in Tkinter callback
-Traceback (most recent call last):
-  File "C:\Users\bsprwslib04\AppData\Local\Lib\tkinter\__init__.py", line 1967, in __call__
-    return self.func(*args)
-           ^^^^^^^^^^^^^^^^
-  File "d:\Vs_Code\XYZ.py", line 4, in opencalc
-    root.destroy()
-    ^^^^
-UnboundLocalError: cannot access local variable 'root' where it is not associated with a value
-PS D:\Vs_Code> & C:/Users/bsprwslib04/AppData/Local/python.exe d:/Vs_Code/XYZ.py
-Exception in Tkinter callback
-Traceback (most recent call last):
-  File "C:\Users\bsprwslib04\AppData\Local\Lib\tkinter\__init__.py", line 1967, in __call__
-           ^^^^^^^^^^^^^^^^
-  File "d:\Vs_Code\XYZ.py", line 48, in doingit
-    cubem.destroy()
-           ^^^^^^^^^
-  File "C:\Users\bsprwslib04\AppData\Local\Lib\tkinter\__init__.py", line 2725, in __init__
-    Widget.__init__(self, master, 'button', cnf, kw)
-  File "C:\Users\bsprwslib04\AppData\Local\Lib\tkinter\__init__.py", line 2647, in __init__
-    self.tk.call(
-_tkinter.TclError: can't invoke "button" command: application has been destroyed
-PS D:\Vs_Code> & C:/Users/bsprwslib04/AppData/Local/python.exe d:/Vs_Code/XYZ.py
-Exception in Tkinter callback
-Traceback (most recent call last):
-  File "C:\Users\bsprwslib04\AppData\Local\Lib\tkinter\__init__.py", line 1967, in __call__
-           ^^^^^^^^^^^^^^^^
-  File "d:\Vs_Code\XYZ.py", line 49, in doingit
-    newboy=mk.Button(root,text="Open Calculator",fg="gray",command=opencalc(root))
-                                                                   ^^^^^^^^^^^^^^
-  File "d:\Vs_Code\XYZ.py", line 44, in opencalc
-    quit.pack(side="top")
-  File "C:\Users\bsprwslib04\AppData\Local\Lib\tkinter\__init__.py", line 2471, in pack_configure
-    self.tk.call(
-_tkinter.TclError: cannot use geometry manager pack inside . which already has slaves managed by grid
-PS D:\Vs_Code> & C:/Users/bsprwslib04/AppData/Local/python.exe d:/Vs_Code/XYZ.py
-Exception in Tkinter callback
-Traceback (most recent call last):
-  File "C:\Users\bsprwslib04\AppData\Local\Lib\tkinter\__init__.py", line 1967, in __call__
-  File "d:\Vs_Code\XYZ.py", line 49, in doingit
-                                                                   ^^^^^^^^^^^^^^
-  File "d:\Vs_Code\XYZ.py", line 44, in opencalc
-    quit.pack()
-  File "C:\Users\bsprwslib04\AppData\Local\Lib\tkinter\__init__.py", line 2471, in pack_configure
-    self.tk.call(
-_tkinter.TclError: cannot use geometry manager pack inside . which already has slaves managed by grid
-PS D:\Vs_Code> & C:/Users/bsprwslib04/AppData/Local/python.exe d:/Vs_Code/XYZ.py
-PS D:\Vs_Code> & C:/Users/bsprwslib04/AppData/Local/python.exe d:/Vs_Code/XYZ.py
-Time taken:  22.876898288726807  seconds
-PS D:\Vs_Code> & C:/Users/bsprwslib04/AppData/Local/python.exe d:/Vs_Code/XYZ.py
-Exception in Tkinter callback
-Traceback (most recent call last):
-  File "C:\Users\bsprwslib04\AppData\Local\Lib\tkinter\__init__.py", line 1967, in __call__
-    return self.func(*args)
-           ^^^^^^^^^^^^^^^^
-  File "d:\Vs_Code\XYZ.py", line 52, in <lambda>
-    cubem=mk.Button(root,text="Draw Cube",fg="Blue",command=lambda: doingit(root))
-                                                                    ^^^^^^^^^^^^^
-  File "d:\Vs_Code\XYZ.py", line 46, in doingit
-    cube.bye()
-    ^^^^^^^^
-AttributeError: module 'cube' has no attribute 'bye'
-Exception in Tkinter callback
-Traceback (most recent call last):
-  File "C:\Users\bsprwslib04\AppData\Local\Lib\tkinter\__init__.py", line 1967, in __call__
-    return self.func(*args)
-           ^^^^^^^^^^^^^^^^
-  File "d:\Vs_Code\XYZ.py", line 52, in <lambda>
-    cubem=mk.Button(root,text="Draw Cube",fg="Blue",command=lambda: doingit(root))
-                                                                    ^^^^^^^^^^^^^
-  File "d:\Vs_Code\XYZ.py", line 45, in doingit
-    cube.cubemaker()
-  File "d:\Vs_Code\cube.py", line 3, in cubemaker
-    go1=t.Turtle()
-        ^^^^^^^^^^
-  File "C:\Users\bsprwslib04\AppData\Local\Lib\turtle.py", line 3831, in __init__
-    RawTurtle.__init__(self, Turtle._screen,
-    self._update()
-  File "C:\Users\bsprwslib04\AppData\Local\Lib\turtle.py", line 2647, in _update_data
-    self.screen._incrementudc()
-  File "C:\Users\bsprwslib04\AppData\Local\Lib\turtle.py", line 1293, in _incrementudc
-    raise Terminator
-turtle.Terminator
-Time taken:  42.09010457992554  seconds
-PS D:\Vs_Code> & C:/Users/bsprwslib04/AppData/Local/python.exe d:/Vs_Code/XYZ.py
-Time taken:  2.0757369995117188  seconds
-PS D:\Vs_Code> & C:/Users/bsprwslib04/AppData/Local/python.exe d:/Vs_Code/cube.py
-PS D:\Vs_Code> & C:/Users/bsprwslib04/AppData/Local/python.exe d:/Vs_Code/XYZ.py
-Exception in Tkinter callback
-Traceback (most recent call last):
-  File "C:\Users\bsprwslib04\AppData\Local\Lib\tkinter\__init__.py", line 1967, in __call__
-    return self.func(*args)
-           ^^^^^^^^^^^^^^^^
-  File "d:\Vs_Code\XYZ.py", line 51, in <lambda>
-    cubem=mk.Button(root,text="Draw Cube",fg="Blue",command=lambda: doingit(root))
-                                                                    ^^^^^^^^^^^^^
-  File "d:\Vs_Code\XYZ.py", line 45, in doingit
-    cube.cubemaker()
-  File "d:\Vs_Code\cube.py", line 3, in cubemaker
-    go1=t.Turtle()
-        ^^^^^^^^^^
-  File "C:\Users\bsprwslib04\AppData\Local\Lib\turtle.py", line 3831, in __init__
-    RawTurtle.__init__(self, Turtle._screen,
-    self._update()
-  File "C:\Users\bsprwslib04\AppData\Local\Lib\turtle.py", line 2661, in _update
-    self._update_data()
-  File "C:\Users\bsprwslib04\AppData\Local\Lib\turtle.py", line 2647, in _update_data
-    self.screen._incrementudc()
-  File "C:\Users\bsprwslib04\AppData\Local\Lib\turtle.py", line 1293, in _incrementudc
-    raise Terminator
-turtle.Terminator
-Time taken:  5.798784255981445  seconds
-PS D:\Vs_Code> & C:/Users/bsprwslib04/AppData/Local/python.exe d:/Vs_Code/XYZ.py
-Exception in Tkinter callback
-Traceback (most recent call last):
-  File "C:\Users\bsprwslib04\AppData\Local\Lib\tkinter\__init__.py", line 1967, in __call__
-    return self.func(*args)
-           ^^^^^^^^^^^^^^^^
-  File "d:\Vs_Code\XYZ.py", line 51, in <lambda>
-    cubem=mk.Button(root,text="Draw Cube",fg="Blue",command=lambda: doingit(root))
-                                                                    ^^^^^^^^^^^^^
-  File "d:\Vs_Code\XYZ.py", line 45, in doingit
-    cube.cubemaker()
-  File "d:\Vs_Code\cube.py", line 12, in cubemaker
-    go1.fd(150)
-  File "C:\Users\bsprwslib04\AppData\Local\Lib\turtle.py", line 1638, in forward
-    self._go(distance)
-  File "C:\Users\bsprwslib04\AppData\Local\Lib\turtle.py", line 1606, in _go
-    self._goto(ende)
-    screen._drawline(self.drawingLineItem,
-    self.cv.coords(lineitem, *cl)
-  File "C:\Users\bsprwslib04\AppData\Local\Lib\tkinter\__init__.py", line 2839, in coords
-    self.tk.call((self._w, 'coords') + args))]
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-_tkinter.TclError: invalid command name ".!canvas"
-Time taken:  5.842051982879639  seconds
-PS D:\Vs_Code> & C:/Users/bsprwslib04/AppData/Local/python.exe d:/Vs_Code/XYZ.py
-Time taken:  5.692831993103027  seconds
-PS D:\Vs_Code> & C:/Users/bsprwslib04/AppData/Local/python.exe d:/Vs_Code/XYZ.py
-Time taken:  17.9659686088562  seconds
-PS D:\Vs_Code> & C:/Users/bsprwslib04/AppData/Local/python.exe d:/Vs_Code/XYZ.py
-Time taken:  11.149744749069214  seconds
-PS D:\Vs_Code> 
+    root=mk.Tk()
+    root.title("Calculator")
+    entry = mk.Entry(root, width=35, borderwidth=5)
+    def click_button(button):
+        if button == '=':
+            try:
+                result = eval(entry.get())
+                entry.delete(0, mk.END)
+                entry.insert(mk.END, str(result))
+            except Exception as e:
+                entry.delete(0, mk.END)
+                entry.insert(mk.END, "Error")
+        else:
+            entry.insert(mk.END, button)
+    def clear_entry():
+        entry.delete(0, mk.END)
+    def quit_calculator():
+        root.destroy()
+    entry.grid(row=0, column=0, columnspan=4)
+    buttons = ['7', '8', '9', '/',
+               '4','5', '6', '*',
+               '1', '2', '3', '-',
+               '0', '.', '=', '+',]
+    row_val = 1
+    col_val = 0
+    for button in buttons:
+        mk.Button(root, text=button, width=5, command=lambda button=button: click_button(button)).grid(row=row_val, column=col_val)
+        col_val += 1
+        if col_val > 3:
+            col_val = 0
+            row_val += 1
+    mk.Button(root, text="C", width=21, command=clear_entry).grid(row=row_val, column=0, columnspan=4)
+    mk.Button(root, text="Quit", width=21, command=quit_calculator).grid(row=row_val+1, column=0, columnspan=4)
+    root.mainloop()
+
+def doingit(root):
+    try:
+        cube.cubemaker()
+        cubem.destroy()
+        newboy=mk.Button(root,text="Open Calculator",fg="gray",command=lambda: opencalc(root))
+        newboy.pack(side="right")
+    except:
+        cubem.destroy()
+        newboy=mk.Button(root,text="Open Calculator",fg="gray",command=lambda: opencalc(root))
+        newboy.pack(side="right")
+
+root=mk.Tk()
+cubem=mk.Button(root,text="Draw Cube",fg="Blue",command=lambda: doingit(root))
+cubem.pack(side="right")
+quit=mk.Button(root,text="exit",fg="Red",command=root.destroy)
+quit.pack(side="top")
+root.mainloop()
+end=time.time()
+print("Time taken: ", end-start, " seconds")
